@@ -1,4 +1,8 @@
 import Carousel from '../../utils/Carousel';
+import Tipsy1 from '../../images/tipsy/Tipsy1.jpg';
+import Tipsy2 from '../../images/tipsy/Tipsy2.jpg';
+import Tipsy3 from '../../images/tipsy/Tipsy3.jpg';
+import Tipsy4 from '../../images/tipsy/Tipsy4.jpg';
 
 const TipsyBlocks = () => (
   <section>
@@ -11,11 +15,11 @@ const TipsyBlocks = () => (
       imageWidth={800}
       imageHeight={400}
       images={[
-          { src: '/tipsy/Tipsy1.jpg', alt: 'Tipsy Block 1' },
-          { src: '/tipsy/Tipsy2.jpg', alt: 'Tipsy Block 2' },
-          { src: '/tipsy/Tipsy3.jpg', alt: 'Tipsy Block 3' },
-          { src: '/tipsy/Tipsy4.jpg', alt: 'Tipsy Block 4' },
-      ]}/>
+        { src: Tipsy1, alt: 'Tipsy Block 1' },
+        { src: Tipsy2, alt: 'Tipsy Block 2' },
+        { src: Tipsy3, alt: 'Tipsy Block 3' },
+        { src: Tipsy4, alt: 'Tipsy Block 4' },
+      ]} />
   </section>
 );
 

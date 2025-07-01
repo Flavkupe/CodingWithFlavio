@@ -1,12 +1,42 @@
 import PageSection from '../../utils/PageSection';
 import Carousel from '../../utils/Carousel';
+import TitleImg from '../../images/homelands/Title.png';
+import ExplorationImg from '../../images/homelands/Exploration_edited.jpg';
+import VisualLandmarkImg from '../../images/homelands/VisualLandmark.png';
+import PickQuestImg from '../../images/homelands/PickQuest.png';
+import QuestCompletionImg from '../../images/homelands/QuestCompletion.png';
+import Landmark1Img from '../../images/homelands/Landmark1.png';
+import Landmark2Img from '../../images/homelands/Landmark2.png';
+import Landmark3Img from '../../images/homelands/Landmark3.png';
+import TownImg from '../../images/homelands/Town.png';
+import CombatMapImg from '../../images/homelands/CombatMap_edited.jpg';
+import CombatGif from '../../images/homelands/Combat_gif.gif';
+import DragonCombatGif from '../../images/homelands/DragonCombat_gif.gif';
+import InteractiveTutorialsImg from '../../images/homelands/InteractiveTutorials_edited.jpg';
+import InteractiveTutorials2Img from '../../images/homelands/InteractiveTutorials2_edited.jpg';
+import AlchemistImg from '../../images/homelands/TownCarousel/Alchemist.png';
+import ArmorImg from '../../images/homelands/TownCarousel/Armor.png';
+import CarpenterImg from '../../images/homelands/TownCarousel/Carpenter.png';
+import DailyBountiesImg from '../../images/homelands/TownCarousel/DailyBounties.png';
+import DiscoveriesImg from '../../images/homelands/TownCarousel/Discoveries.png';
+import ExplorerGuildImg from '../../images/homelands/TownCarousel/ExplorerGuild.png';
+import FighterGuildImg from '../../images/homelands/TownCarousel/FighterGuild.png';
+import InventoryImg from '../../images/homelands/TownCarousel/Inventory.png';
+import MilestonesImg from '../../images/homelands/TownCarousel/Milestones.png';
+import ProgressImg from '../../images/homelands/TownCarousel/Progress.png';
+import QuestBoardImg from '../../images/homelands/TownCarousel/QuestBoard.png';
+import ShopImg from '../../images/homelands/TownCarousel/Shop.png';
+import ShopInfoImg from '../../images/homelands/TownCarousel/ShopInfo.png';
+import SmithyImg from '../../images/homelands/TownCarousel/Smithy.png';
+import TavernImg from '../../images/homelands/TownCarousel/Tavern.png';
+import WeaponsImg from '../../images/homelands/TownCarousel/Weapons.png';
 
 const Homelands = () => (
     <main>
         <h1>Homeland: A Running RPG</h1>
         <PageSection
             backgroundColor="white"
-            images={[{ src: '/homelands/Title.png', alt: 'Homeland Title', style: { maxWidth: 200, margin: '0 auto' } }]}
+            images={[{ src: TitleImg, alt: 'Homeland Title', style: { maxWidth: 200, margin: '0 auto' } }]}
             layout="ImageOnRight"
             imageLayout="Vertical"
             text={
@@ -20,7 +50,7 @@ const Homelands = () => (
         <PageSection
             title="World Map"
             backgroundColor="lightgray"
-            images={[{ src: '/homelands/Exploration_edited.jpg', alt: 'Exploration', style: { maxWidth: 300 } }]}
+            images={[{ src: ExplorationImg, alt: 'Exploration', style: { maxWidth: 300 } }]}
             layout="ImageOnRight"
             imageLayout="Vertical"
             text={
@@ -36,7 +66,7 @@ const Homelands = () => (
         <PageSection
             backgroundColor="lightgray"
             images={[
-                { src: '/homelands/VisualLandmark.png', alt: 'Visual Landmark', style: { maxWidth: 300 } },
+                { src: VisualLandmarkImg, alt: 'Visual Landmark', style: { maxWidth: 300 } },
             ]}
             layout="ImageOnLeft"
             imageLayout="Horizontal"
@@ -51,8 +81,8 @@ const Homelands = () => (
         <PageSection
             backgroundColor="lightgray"
             images={[
-                { src: '/homelands/PickQuest.png', alt: 'Pick Quest', style: { maxWidth: 300 } },
-                { src: '/homelands/QuestCompletion.png', alt: 'Quest Completion', style: { maxWidth: 300 } },
+                { src: PickQuestImg, alt: 'Pick Quest', style: { maxWidth: 300 } },
+                { src: QuestCompletionImg, alt: 'Quest Completion', style: { maxWidth: 300 } },
             ]}
             layout="ImageOnRight"
             imageLayout="Horizontal"
@@ -68,9 +98,9 @@ const Homelands = () => (
             title="Landmarks"
             backgroundColor="white"
             images={[
-                { src: '/homelands/Landmark1.png', alt: 'Landmark 1', style: { maxWidth: 220 } },
-                { src: '/homelands/Landmark2.png', alt: 'Landmark 2', style: { maxWidth: 220 } },
-                { src: '/homelands/Landmark3.png', alt: 'Landmark 3', style: { maxWidth: 220 } },
+                { src: Landmark1Img, alt: 'Landmark 1', style: { maxWidth: 220 } },
+                { src: Landmark2Img, alt: 'Landmark 2', style: { maxWidth: 220 } },
+                { src: Landmark3Img, alt: 'Landmark 3', style: { maxWidth: 220 } },
             ]}
             layout="ImageOnRight"
             imageLayout="Horizontal"
@@ -84,7 +114,7 @@ const Homelands = () => (
             title="The Town"
             backgroundColor="lightgray"
             images={[
-                { src: '/homelands/Town.png', alt: 'Town', style: { maxWidth: 250 } },
+                { src: TownImg, alt: 'Town', style: { maxWidth: 250 } },
             ]}
             layout="ImageOnLeft"
             imageLayout="Horizontal"
@@ -121,22 +151,22 @@ const Homelands = () => (
                     <p>In fact, it's possible to profit from buying goods from certain vendors and selling them to other shops for a profit! Note how the Shop Info tab on the left displays information about this shop's preferences. I wanted to add this element to Homeland as it has always been a personal favorite feature from games like Mount and Blade. Find a shop selling something for cheap? Buy it and sell it elsewhere! Establish trade routes, which require you to actually move physically! Shop inventory refreshes each day.</p>
                     <Carousel
                         images={[
-                            { src: '/homelands/TownCarousel/Alchemist.png', title: 'Alchemist', alt: 'Alchemist' },
-                            { src: '/homelands/TownCarousel/Armor.png', title: 'Armor', alt: 'Armor' },
-                            { src: '/homelands/TownCarousel/Carpenter.png', title: 'Carpenter', alt: 'Carpenter' },
-                            { src: '/homelands/TownCarousel/DailyBounties.png', title: 'Daily Bounties', alt: 'Daily Bounties' },
-                            { src: '/homelands/TownCarousel/Discoveries.png', title: 'Discoveries', alt: 'Discoveries' },
-                            { src: '/homelands/TownCarousel/ExplorerGuild.png', title: 'Explorer Guild', alt: 'Explorer Guild' },
-                            { src: '/homelands/TownCarousel/FighterGuild.png', title: 'Fighter Guild', alt: 'Fighter Guild' },
-                            { src: '/homelands/TownCarousel/Inventory.png', title: 'Inventory', alt: 'Inventory' },
-                            { src: '/homelands/TownCarousel/Milestones.png', title: 'Milestones', alt: 'Milestones' },
-                            { src: '/homelands/TownCarousel/Progress.png', title: 'Progress', alt: 'Progress' },
-                            { src: '/homelands/TownCarousel/QuestBoard.png', title: 'Quest Board', alt: 'Quest Board' },
-                            { src: '/homelands/TownCarousel/Shop.png', title: 'Shop', alt: 'Shop' },
-                            { src: '/homelands/TownCarousel/ShopInfo.png', title: 'Shop Info', alt: 'Shop Info' },
-                            { src: '/homelands/TownCarousel/Smithy.png', title: 'Smithy', alt: 'Smithy' },
-                            { src: '/homelands/TownCarousel/Tavern.png', title: 'Tavern', alt: 'Tavern' },
-                            { src: '/homelands/TownCarousel/Weapons.png', title: 'Weapons', alt: 'Weapons' },
+                            { src: AlchemistImg, title: 'Alchemist', alt: 'Alchemist' },
+                            { src: ArmorImg, title: 'Armor', alt: 'Armor' },
+                            { src: CarpenterImg, title: 'Carpenter', alt: 'Carpenter' },
+                            { src: DailyBountiesImg, title: 'Daily Bounties', alt: 'Daily Bounties' },
+                            { src: DiscoveriesImg, title: 'Discoveries', alt: 'Discoveries' },
+                            { src: ExplorerGuildImg, title: 'Explorer Guild', alt: 'Explorer Guild' },
+                            { src: FighterGuildImg, title: 'Fighter Guild', alt: 'Fighter Guild' },
+                            { src: InventoryImg, title: 'Inventory', alt: 'Inventory' },
+                            { src: MilestonesImg, title: 'Milestones', alt: 'Milestones' },
+                            { src: ProgressImg, title: 'Progress', alt: 'Progress' },
+                            { src: QuestBoardImg, title: 'Quest Board', alt: 'Quest Board' },
+                            { src: ShopImg, title: 'Shop', alt: 'Shop' },
+                            { src: ShopInfoImg, title: 'Shop Info', alt: 'Shop Info' },
+                            { src: SmithyImg, title: 'Smithy', alt: 'Smithy' },
+                            { src: TavernImg, title: 'Tavern', alt: 'Tavern' },
+                            { src: WeaponsImg, title: 'Weapons', alt: 'Weapons' },
                         ]}
                     />
                 </>
@@ -146,7 +176,7 @@ const Homelands = () => (
             title="Combat Encounters"
             backgroundColor="lightgray"
             images={[
-                { src: '/homelands/CombatMap_edited.jpg', alt: 'Combat Map', style: { maxWidth: 250 } },
+                { src: CombatMapImg, alt: 'Combat Map', style: { maxWidth: 250 } },
             ]}
             layout="ImageOnLeft"
             imageLayout="Horizontal"
@@ -169,8 +199,8 @@ const Homelands = () => (
         <PageSection
             backgroundColor="lightgray"
             images={[
-                { src: '/homelands/Combat_gif.gif', alt: 'Combat GIF', style: { maxWidth: 800 } },
-                { src: '/homelands/DragonCombat_gif.gif', alt: 'Dragon Combat GIF', style: { maxWidth: 800 } },
+                { src: CombatGif, alt: 'Combat GIF', style: { maxWidth: 800 } },
+                { src: DragonCombatGif, alt: 'Dragon Combat GIF', style: { maxWidth: 800 } },
             ]}
             imageLayout="Vertical"
         />
@@ -178,8 +208,8 @@ const Homelands = () => (
             title="Tutorials"
             backgroundColor="white"
             images={[
-                { src: '/homelands/InteractiveTutorials_edited.jpg', alt: 'Interactive Tutorials', style: { maxWidth: 200 } },
-                { src: '/homelands/InteractiveTutorials2_edited.jpg', alt: 'Interactive Tutorials 2', style: { maxWidth: 200 } },
+                { src: InteractiveTutorialsImg, alt: 'Interactive Tutorials', style: { maxWidth: 200 } },
+                { src: InteractiveTutorials2Img, alt: 'Interactive Tutorials 2', style: { maxWidth: 200 } },
             ]}
             layout="ImageOnRight"
             imageLayout="Horizontal"

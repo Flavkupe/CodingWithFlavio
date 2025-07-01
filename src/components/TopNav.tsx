@@ -24,7 +24,7 @@ function Dropdown({ label, items }: { label: string; items: DropdownItem[] }) {
                             {item.name}
                         </div>
                     ) : (
-                        <NavItem key={index} label={item.label} to={item.to} external={item.external} />
+                        <NavItem key={index} type="nav" label={item.label} to={item.to} external={item.external} />
                     )
                 ))}
             </div>
@@ -37,20 +37,20 @@ function TopNav() {
         <nav className="navbar">
             <div className="navbar-logo">CodingWithFlavio</div>
             <ul className="navbar-links">
-                <li><NavItem label="Home" to="/" /></li>
+                <li><NavItem type="nav" label="Home" to="/" /></li>
                 <Dropdown
                     label="Projects"
                     items={[
                         { type: 'divider', name: 'Recent Projects' },
-                        { label: "Homelands: A Running RPG", to: "/homelands", external: false },
-                        { label: "Unity Snippet Library", to: "https://flavkupe.github.io/FKUnitySnippetsWeb", external: true },
+                        { type: 'nav', label: "Homelands: A Running RPG", to: "/homelands", external: false },
+                        { type: 'nav', label: "Unity Snippet Library", to: "https://flavkupe.github.io/FKUnitySnippetsWeb", external: true },
                         { type: 'divider', name: 'Older Projects' },
-                        { label: "Vegetable Garden", to: "/vegetable-garden", external: false },
-                        { label: "Tipsy Blocks", to: "/tipsy-blocks", external: false },
+                        { type: 'nav', label: "Vegetable Garden", to: "/vegetable-garden", external: false },
+                        { type: 'nav', label: "Tipsy Blocks", to: "/tipsy-blocks", external: false },
                     ]}
                 />
-                <li><NavItem label="Homelands: A Running RPG" to="/homelands" /></li>
-                <li><NavItem label="About Me" to="/about" /></li>
+                <li><NavItem type="nav" label="Homelands: A Running RPG" to="/homelands" /></li>
+                <li><NavItem type="nav" label="About Me" to="/about" /></li>
             </ul>
         </nav>
     );
