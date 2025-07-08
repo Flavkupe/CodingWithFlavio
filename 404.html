@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="0; url=/" />
+</head>
+
+<body>
+    <p>Redirecting...</p>
+    <script>
+        // Preserve the path after redirect
+        var l = window.location;
+        var path = l.pathname + l.search + l.hash;
+        window.location.replace('/' + '?' + 'redirect=' + encodeURIComponent(path));
+    </script>
+</body>
+
+</html>
