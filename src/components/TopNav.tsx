@@ -44,6 +44,7 @@ function TopNav() {
                         { type: 'divider', name: 'Recent Projects' },
                         { type: 'nav', label: "Homelands: A Running RPG", to: "/homelands", external: false },
                         { type: 'nav', label: "Unity Snippet Library", to: "https://flavkupe.github.io/FKUnitySnippetsWeb", external: true },
+                        { type: 'nav', label: "Wikipedia Museum", to: "/wikipedia-museum", external: false },
                         { type: 'divider', name: 'Older Projects' },
                         { type: 'nav', label: "Vegetable Garden", to: "/vegetable-garden", external: false },
                         { type: 'nav', label: "Tipsy Blocks", to: "/tipsy-blocks", external: false },

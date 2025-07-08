@@ -6,6 +6,7 @@ import TipsyBlocks from './pages/Projects/TipsyBlocks';
 import AboutMe from './pages/AboutMe/AboutMe';
 import Homelands from './pages/Homelands/Homelands';
 import TopNav from './components/TopNav';
+import WikipediaMuseum from './pages/Projects/WikipediaMuseum';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/vegetable-garden" element={<VegetableGarden />} />
           <Route path="/tipsy-blocks" element={<TipsyBlocks />} />
+          <Route path="/wikipedia-museum" element={<WikipediaMuseum />} />
           <Route path="/homelands" element={<Homelands />} />
           <Route path="/about" element={<AboutMe />} />
         </Routes>
